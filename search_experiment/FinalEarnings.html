@@ -1,0 +1,22 @@
+{% extends 'global/Page.html' %}
+{% load otree %}
+
+{% block title %}
+    Final Earnings
+{% endblock %}
+
+{% block content %}
+    <h3>
+        The task is over. Please click the next button to take the survey.
+    </h3>
+
+    <p>
+        Your total payoff from today's experiment (including {{ show_up_fee }} show-up fee) is {{ total_earnings }}.
+    </p>
+
+    <p>
+       You can collect the cash after finishing the survey.
+    </p>
+
+    {% next_button %}
+{% endblock %}

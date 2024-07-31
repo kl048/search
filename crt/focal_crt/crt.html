@@ -1,0 +1,20 @@
+{{ extends 'global/Page.html' }}
+{{ block styles }}
+    <style>
+        .input-group, input.form-control, select.form-control {
+            max-width: 150px;
+        }
+    </style>
+{{ endblock }}
+
+{{ block title }}
+
+<p>
+   <b>Please answer the following questions. You will be paid $0.50 for each right answers on the following questions.</b>
+</p>
+{{ endblock }}
+{{ block content }}
+
+    {{ formfields }}
+    {{ next_button }}
+{{ endblock }}

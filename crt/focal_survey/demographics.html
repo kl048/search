@@ -1,0 +1,22 @@
+{{ extends 'global/Page.html' }}
+{{ block styles }}
+    <style>
+        .input-group, input.form-control, select.form-control {
+            max-width: 150px;
+        }
+    </style>
+{{ endblock }}
+
+{{ block title }}Demographics{{ endblock }}
+
+{{ block content }}
+
+<p>
+    Please answer the following questions.
+</p>
+
+{{ formfields }}
+
+{{ next_button }}
+
+{{ endblock }}

@@ -1,0 +1,29 @@
+{% extends 'global/Page.html' %}
+{% load otree %}
+
+{% block title %}
+    Results - Period {{ player.round_number }}
+{% endblock %}
+
+{% block content %}
+    <table class="table mb-5">
+        <tr>
+            <th>Your reservation wage</th>
+            <td>{{ reservation_wage }} {{ C.ECU_LABEL }}</td>
+        </tr>
+        <tr>
+            <th>Your wage offer</th>
+            <td>{{ wage_offer }} {{ C.ECU_LABEL }}</td>
+        </tr>
+        <tr>
+            <th>Was the offer accepted?</th>
+            <td>{% if accepted %} Yes {% else %} No {% endif %}</td>
+        </tr>
+        <tr>
+            <th>Your earnings</th>
+            <td>{{ earnings }} {{ C.ECU_LABEL }}</td>
+        </tr>
+    </table>
+
+    {% next_button %}
+{% endblock %}

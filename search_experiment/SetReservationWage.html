@@ -1,0 +1,19 @@
+{% extends 'global/Page.html' %}
+{% load otree %}
+
+{% block title %}
+    Set Reservation Wage
+{% endblock %}
+
+{% block content %}
+    <form>
+        {{ formfields }}
+    </form>
+
+    <div class="chat-widget">
+        <h5><i><b>You can chat with your team in the box below</b></i></h5>
+        {% chat nickname=nickname %}
+    </div>
+
+    {% next_button %}
+{% endblock %}
