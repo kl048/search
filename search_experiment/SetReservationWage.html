@@ -6,14 +6,17 @@
 {% endblock %}
 
 {% block content %}
+    <h3>Round {{ round_number }}</h3>
     <form>
         {{ formfields }}
     </form>
 
+    {% if player.treatment in ['C', 'T'] %}
     <div class="chat-widget">
         <h5><i><b>You can chat with your team in the box below</b></i></h5>
-        {% chat nickname=nickname %}
+        {% chat %}
     </div>
+    {% endif %}
 
     {% next_button %}
 {% endblock %}

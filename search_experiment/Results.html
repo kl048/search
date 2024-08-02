@@ -2,7 +2,7 @@
 {% load otree %}
 
 {% block title %}
-    Results - Period {{ player.round_number }}
+    Results - Round {{ player.round_number }}
 {% endblock %}
 
 {% block content %}
@@ -21,7 +21,7 @@
         </tr>
         <tr>
             <th>Your earnings</th>
-            <td>{{ earnings }} {{ C.ECU_LABEL }}</td>
+            <td>{{ earnings }}</td>
         </tr>
     </table>
 
